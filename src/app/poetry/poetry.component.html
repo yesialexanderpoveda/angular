@@ -1,0 +1,21 @@
+<h2 class="text-dark">
+  Lista 
+</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">id</th>
+      <th scope="col">Autor</th>
+      <th scope="col">género</th>
+      <th scope="col">descripción</th>
+    </tr>
+  </thead>
+  <tbody >
+    <tr *ngFor="let poem of poems" >
+      <th scope="row">{{poem.id}}</th>
+      <td>{{poem.author}}</td>
+      <td>{{poem.gender}}</td>
+      <td>{{poem.description}}</td>
+    </tr>
+  </tbody>
+</table>
