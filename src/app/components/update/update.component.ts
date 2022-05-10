@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PoetryService } from '../../service/poetry.service';
-import { Poetry } from '../../modelo/modelo';
+import { Poetry } from '../../model/model';
 
 @Component({
   selector: 'app-update',

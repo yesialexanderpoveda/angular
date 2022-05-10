@@ -9,16 +9,19 @@ import { PoetryService } from '../../service/poetry.service';
 export class RemoveComponent implements OnInit {
 
   dtaForForm = true;
-  constructor(private _poetryService: PoetryService) { }
-  
-  changeForm(form: any){
+  constructor(
+    private _poetryService: PoetryService
+  ) { }
 
-    this._poetryService.deletePoem(form.id).subscribe(dta =>{
+  changeForm(form: any) {
+
+    this._poetryService.deletePoem(form.id).subscribe(dta => {
+
 
       console.log('delete with exit');
 
     })
-    
+
   }
   ngOnInit(): void {
   }

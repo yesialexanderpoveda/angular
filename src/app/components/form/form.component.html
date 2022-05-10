@@ -1,48 +1,48 @@
 <form [formGroup]="form" (ngSubmit)="send()">
-<fieldset [disabled]="botonId">
-<div class="mb-3 row">
-  <label for="id" class="col-sm-2 col-form-label">Id</label>
-  <div class="col-sm-10">
-    <input  class="form-control" id="inputPassword" formControlName="id">
-    <span  class="smaller text-warning" *ngIf="this.form.get('id')?.errors?.['required'] && !botonId">
-      * El id no puede quedar vacío 
-    </span>
-  </div>
-</div>
-</fieldset>
-<fieldset [disabled]="boton">
-<div class="mb-3 row">
-  <label for="inputPassword" class="col-sm-2 col-form-label">Autor</label>
-  <div class="col-sm-10">
-    <input class="form-control" id="inputPassword"   formControlName="author">
-    <span  class="smaller text-warning" *ngIf="this.form.get('author')?.errors?.['required'] && !boton">
-      * El nombre no puede quedar vacío 
-    </span>
+  <fieldset [disabled]="botonId">
+    <div class="mb-3 row">
+      <label for="id" class="col-sm-2 col-form-label">Id</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="inputPassword" formControlName="id">
+        <span class="smaller text-warning" *ngIf="this.form.get('id')?.errors?.['required'] && !botonId">
+          * El id no puede quedar vacío
+        </span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset [disabled]="boton">
+    <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Autor</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="inputPassword" formControlName="author">
+        <span class="smaller text-warning" *ngIf="this.form.get('author')?.errors?.['required'] && !boton">
+          * El nombre no puede quedar vacío
+        </span>
 
-  </div>
-</div>
-</fieldset>
-<fieldset [disabled]="boton">
-<div class="mb-3 row">
-  <label for="inputPassword" class="col-sm-2 col-form-label">Género</label>
-  <div class="col-sm-10">
-    <input  class="form-control" id="inputPassword" formControlName="gender">
-    <span  class="smaller text-warning" *ngIf="this.form.get('gender')?.errors?.['required'] && !boton">
-      * El género no puede quedar vacío 
-    </span>
-  </div>
-</div>
-</fieldset>
-<fieldset [disabled]="boton">
-<div class="mb-3 row">
-  <label for="inputPassword" class="col-sm-2 col-form-label">Descripción</label>
-  <div class="col-sm-10">
-    <input type="text" class="form-control" id="inputPassword" formControlName="description">
-    <span  class="smaller text-warning" *ngIf="this.form.get('description')?.errors?.['required'] && !boton">
-      * La Descripción no puede quedar vacia 
-    </span>
-  </div>
-</div>
-</fieldset>
-<button class="btn btn-primary">{{nameCom}}</button>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset [disabled]="boton">
+    <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Género</label>
+      <div class="col-sm-10">
+        <input class="form-control" id="inputPassword" formControlName="gender">
+        <span class="smaller text-warning" *ngIf="this.form.get('gender')?.errors?.['required'] && !boton">
+          * El género no puede quedar vacío
+        </span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset [disabled]="boton">
+    <div class="mb-3 row">
+      <label for="inputPassword" class="col-sm-2 col-form-label">Descripción</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="inputPassword" formControlName="description">
+        <span class="smaller text-warning" *ngIf="this.form.get('description')?.errors?.['required'] && !boton">
+          * La Descripción no puede quedar vacia
+        </span>
+      </div>
+    </div>
+  </fieldset>
+  <button class="btn btn-primary">{{nameCom}}</button>
 </form>

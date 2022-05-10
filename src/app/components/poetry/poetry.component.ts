@@ -8,27 +8,27 @@ import { Observable } from 'rxjs';
 })
 export class PoetryComponent implements OnInit {
 
-  
+
 
   constructor(
-    private _poems: PoetryService 
+    private _poems: PoetryService
   ) { }
-  poems!:any []
+  poems!: any[]
 
   ngOnInit(): void {
-  this.getPoetry()
+    this.getPoetry()
   }
-  
 
 
-  getPoetry(){
 
-    this._poems.getPoems().subscribe((dta: any )=>{
-   
-         this.poems  = dta;
+  getPoetry() {
+
+    this._poems.getPoems().subscribe((dta: any) => {
+
+      this.poems = dta;
 
     })
 
-   
+
   }
 }
