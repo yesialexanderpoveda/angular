@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PoetryService } from '../service/poetry.service';
+import { PoetryService } from '../../service/poetry.service';
 import { Observable } from 'rxjs';
 @Component({
   selector: 'app-poetry',

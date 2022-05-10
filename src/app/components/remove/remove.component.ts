@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { PoetryService } from '../../service/poetry.service';
 
 @Component({
   selector: 'app-remove',
@@ -8,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
 export class RemoveComponent implements OnInit {
 
   dtaForForm = true;
-  constructor() { }
+  constructor(private _poetryService: PoetryService) { }
   
   changeForm(form: any){
-    console.log(form, 'Im remove')
+
+    this._poetryService.deletePoem(form.id).subscribe(dta =>{
+
+      console.log('delete with exit');
+
+    })
+    
   }
   ngOnInit(): void {
   }

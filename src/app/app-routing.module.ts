@@ -1,9 +1,9 @@
 import { Component, NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CreateComponent } from './create/create.component';
-import {MenuComponent} from './menu/menu.component'
-import { RemoveComponent } from './remove/remove.component';
-import { UpdateComponent } from './update/update.component';
+import { CreateComponent } from './components/create/create.component';
+import {MenuComponent} from './components/menu/menu.component'
+import { RemoveComponent } from './components/remove/remove.component';
+import { UpdateComponent } from './components/update/update.component';
 const routes: Routes = [
 
 {

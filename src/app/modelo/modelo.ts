@@ -1,12 +1,12 @@
 
 export class Poetry{
   _id?: string;
-  name: string;
+  author: string;
   gender: string;
   description: string;
 
-  constructor(name: string, gender: string, description: string  ){
-this.name = name;
+  constructor(author: string, gender: string, description: string  ){
+this.author = author;
 this.gender = gender;
 this.description = description;
   }
